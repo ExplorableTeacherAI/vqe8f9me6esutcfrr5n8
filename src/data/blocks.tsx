@@ -96,7 +96,7 @@ export const blocks: ReactElement[] = [
     <StackLayout key="layout-history-content" maxWidth="xl">
         <Block id="block-history-content" padding="sm">
             <EditableParagraph id="para-history-content" blockId="block-history-content">
-                For thousands of years, civilizations counted without a symbol for nothing. The ancient Babylonians, Greeks, and Romans all performed remarkable calculations — yet none had a true zero. It wasn't until around the 5th century CE in India that mathematicians like{" "}
+                For thousands of years, civilizations counted without a symbol for nothing. The ancient Babylonians used a space as a placeholder, the Greeks pondered the philosophical paradox of "nothing," and the Romans built an empire with numerals that had no zero at all. It wasn't until around the 5th century CE in India that mathematicians like{" "}
                 <InlineTooltip
                     id="tooltip-brahmagupta"
                     tooltip="An Indian mathematician who lived from 598–668 CE and wrote rules for arithmetic involving zero and negative numbers."
@@ -104,7 +104,23 @@ export const blocks: ReactElement[] = [
                 >
                     Brahmagupta
                 </InlineTooltip>
-                {" "}gave zero its own identity as a number — not just an empty placeholder, but a value that could be added, subtracted, and multiplied. This seemingly simple idea transformed mathematics forever, eventually enabling everything from algebra to calculus to the binary code that powers modern computers.
+                {" "}gave zero its own identity as a number — not just an empty placeholder, but a value that could be added, subtracted, and multiplied. He was the first to write rules like "a number multiplied by zero is zero" and "a number plus zero remains unchanged." From India, zero traveled along trade routes to the{" "}
+                <InlineTooltip
+                    id="tooltip-arabic"
+                    tooltip="Arab mathematicians like Al-Khwarizmi adopted the Indian numeral system and spread it throughout the Islamic world during the 8th-9th centuries."
+                    color="#3cc499"
+                >
+                    Islamic world
+                </InlineTooltip>
+                {" "}and eventually reached Europe through the work of{" "}
+                <InlineTooltip
+                    id="tooltip-fibonacci"
+                    tooltip="Leonardo of Pisa (c. 1170–1250), known as Fibonacci, introduced the Hindu-Arabic numeral system to Europe in his book Liber Abaci (1202)."
+                    color="#f59e0b"
+                >
+                    Fibonacci
+                </InlineTooltip>
+                {" "}in the 13th century. This seemingly simple idea transformed mathematics forever, eventually enabling everything from algebra to calculus to the binary code that powers modern computers.
             </EditableParagraph>
         </Block>
     </StackLayout>,

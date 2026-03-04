@@ -1,6 +1,7 @@
 import { type ReactElement } from "react";
-// import { Block } from "@/components/templates";
-// import { StackLayout, SplitLayout, GridLayout, ScrollytellingLayout, ScrollStep, ScrollVisual } from "@/components/layouts";
+import { Block } from "@/components/templates";
+import { StackLayout } from "@/components/layouts";
+import { EditableH2, EditableParagraph, InlineTooltip } from "@/components/atoms";
 
 // Initialize variables and their colors from this file's variable definitions
 import { useVariableStore, initializeVariableColors } from "@/stores";
@@ -85,5 +86,26 @@ initializeVariableColors(variableDefinitions);
  */
 
 export const blocks: ReactElement[] = [
-    // Start adding your blocks here!
+    <StackLayout key="layout-history-title" maxWidth="xl">
+        <Block id="block-history-title" padding="md">
+            <EditableH2 id="h2-history-title" blockId="block-history-title">
+                The Birth of Zero: A Mathematical Revolution
+            </EditableH2>
+        </Block>
+    </StackLayout>,
+    <StackLayout key="layout-history-content" maxWidth="xl">
+        <Block id="block-history-content" padding="sm">
+            <EditableParagraph id="para-history-content" blockId="block-history-content">
+                For thousands of years, civilizations counted without a symbol for nothing. The ancient Babylonians, Greeks, and Romans all performed remarkable calculations — yet none had a true zero. It wasn't until around the 5th century CE in India that mathematicians like{" "}
+                <InlineTooltip
+                    id="tooltip-brahmagupta"
+                    tooltip="An Indian mathematician who lived from 598–668 CE and wrote rules for arithmetic involving zero and negative numbers."
+                    color="#8b5cf6"
+                >
+                    Brahmagupta
+                </InlineTooltip>
+                {" "}gave zero its own identity as a number — not just an empty placeholder, but a value that could be added, subtracted, and multiplied. This seemingly simple idea transformed mathematics forever, eventually enabling everything from algebra to calculus to the binary code that powers modern computers.
+            </EditableParagraph>
+        </Block>
+    </StackLayout>,
 ];

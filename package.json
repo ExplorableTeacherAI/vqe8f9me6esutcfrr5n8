@@ -2,7 +2,7 @@
   "name": "mathvibe",
   "private": true,
   "version": "1.0.0",
-  "homepage": "https://anno.mathvibe.space/",
+  "homepage": "https://annotation-test.mathvibe.space/",
   "type": "module",
   "scripts": {
     "dev": "vite",
